@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-cd $HOME/TELAND
+cd $HOME/Kurapika
 install() {
 rm -rf $HOME/.telegram-cli
 sudo chmod +x tg
-chmod +x TELAND
+chmod +x Kurapika
 chmod +x Run
 ./Run
 }

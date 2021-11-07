@@ -2628,10 +2628,10 @@ end
 end,nil)   
 end
 if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then  
-Text = "ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄʀ ᴋᴜʀ\n\n[◈  ᴋᴜʀ ᴄʜᴀɴɴᴇʟ](http://t.me/kksili)\n\n[◈  ɪɴғᴏ sᴏᴜʀᴄᴇ](http://t.me/X444F)\n\n[◈  ᴋᴜʀ ᴅᴇᴠᴇʟᴏᴘᴇʀ](http://t.me/X444F)\n\n[◈  ʙᴏᴛ ᴋᴜʀ](http://t.me/X444F"
+Text = "ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄʀ \n\n[◈   ᴄʜᴀɴɴᴇʟ](http://t.me/kksili)\n\n[◈  ɪɴғᴏ sᴏᴜʀᴄᴇ](http://t.me/X444F)\n\n[◈   ᴅᴇᴠᴇʟᴏᴘᴇʀ](http://t.me/X444F)\n\n[◈  ʙᴏᴛ ](http://t.me/X444F"
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '◈ sᴏᴜʀᴄʀ ᴋᴜʀ',url="t.me/ooBooo"}},
+{{text = '◈ soure ',url="t.me/ooBooo"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/kksili&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))

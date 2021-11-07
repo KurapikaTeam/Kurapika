@@ -2633,17 +2633,13 @@ Text = [[
 ==================
 ☆ .•♫•♬•𝙎𝙤𝙪𝙧𝘾𝙚 𝙆𝙪𝙧𝙖𝙥𝙞𝙠𝙖•♬•♫•.
 ==================
-☆ ↬︙ [Source Channel](http://t.me/oobooo)
+☆ ↬︙ [𝚂𝚘𝚞𝚛𝚌𝚎 𝙺𝚞𝚛𝚊𝚙𝚒𝚔𝚊](http://t.me/oobooo)
 ==================
-☆ ↬︙ [Source Update](https://t.me/FFFFFy)      
+☆ ↬︙ [𝚊𝚕𝚊𝚜𝚑](https://t.me/X444F)      
 ==================
-☆ ↬︙ [Source developer](http://t.me/X444F)    
-===================
-☆ ↬︙ [ programmer](http://t.me/X444F)
-===================
 ]]
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Cukur_So&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+send(msg.chat_id_, msg.id_,Text)
+return false
 end
 --------------------------------------------------------------------------------------------------------------
 if Chat_Type == 'GroupBot' and ChekAdd(msg.chat_id_) == true then
@@ -10150,7 +10146,7 @@ local Teext =[[
 *◈~⪼ تغير امر الاوامر*
 *◈~⪼ تغير امر م1 ~ الئ م10*
 *ٴ•━━━━━━ 𝙆𝙋 ━━━━━━━•*
-[𝙎𝙤𝙪𝙧𝙘?? 𝙆𝙪𝙧𝙖𝙥𝙞𝙠𝙖.](t.me/ooBooo)
+[𝙎𝙤𝙪𝙧𝙘𝙚 𝙆𝙪𝙧𝙖𝙥𝙞𝙠𝙖.](t.me/ooBooo)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {

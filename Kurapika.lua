@@ -2627,14 +2627,23 @@ end
 end
 end,nil)   
 end
-if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then  
-Text = "ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄʀ \n\n[◈   ᴄʜᴀɴɴᴇʟ](https://t.me/CXRCX)\n\n[◈  ɪɴғᴏ sᴏᴜʀᴄᴇ](http://t.me/X444F)\n\n[◈   ᴅᴇᴠᴇʟᴏᴘᴇʀ](http://t.me/X444F)\n\n[◈  ʙᴏᴛ ](http://t.me/X444F"
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = '◈ soure ',url="t.me/ooBooo"}},
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/CXRCX&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+if text == 'السورس' or text == '' or text == 'يا سورس' then
+Text = [[
+☆ ↬⦑ Welcome to Source ⦒
+==================
+☆ .•♫•♬•𝙎𝙤𝙪𝙧𝘾𝙚 𝙆𝙪𝙧𝙖𝙥𝙞𝙠𝙖•♬•♫•.
+==================
+☆ ↬︙ [Source Channel](http://t.me/oobooo)
+==================
+☆ ↬︙ [Source Update](https://t.me/FFFFFy)      
+==================
+☆ ↬︙ [Source developer](http://t.me/X444F)    
+===================
+☆ ↬︙ [ programmer](http://t.me/X444F)
+===================
+]]
+send(msg.chat_id_, msg.id_,Text)
+return false
 end
 --------------------------------------------------------------------------------------------------------------
 if Chat_Type == 'GroupBot' and ChekAdd(msg.chat_id_) == true then

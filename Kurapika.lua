@@ -2642,8 +2642,8 @@ Text = [[
 ☆ ↬︙ [ programmer](http://t.me/X444F)
 ===================
 ]]
-send(msg.chat_id_, msg.id_,Text)
-return false
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/CXRCX&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 --------------------------------------------------------------------------------------------------------------
 if Chat_Type == 'GroupBot' and ChekAdd(msg.chat_id_) == true then
@@ -10150,7 +10150,7 @@ local Teext =[[
 *◈~⪼ تغير امر الاوامر*
 *◈~⪼ تغير امر م1 ~ الئ م10*
 *ٴ•━━━━━━ 𝙆𝙋 ━━━━━━━•*
-[𝙎𝙤𝙪𝙧𝙘𝙚 𝙆𝙪𝙧𝙖𝙥𝙞𝙠𝙖.](t.me/ooBooo)
+[𝙎𝙤𝙪𝙧𝙘𝙚 ??𝙪𝙧𝙖𝙥𝙞𝙠𝙖.](t.me/ooBooo)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
